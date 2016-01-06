@@ -81,7 +81,7 @@ public class AddBook extends Fragment implements LoaderManager.LoaderCallbacks<C
                     clearFields();
                     return;
                 }
-                
+
                 //Once we have an ISBN, start a book intent, but check for network first
                 if (isNetworkAvailable()) {
                     Intent bookIntent = new Intent(getActivity(), BookService.class);
