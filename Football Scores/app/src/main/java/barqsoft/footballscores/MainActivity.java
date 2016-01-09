@@ -66,10 +66,11 @@ public class MainActivity extends ActionBarActivity
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState)
     {
-        Log.d(LOG_TAG, "onRestoreInstanceState");
+        Log.d(LOG_TAG, "onRestoreInstanceState()");
         current_fragment = savedInstanceState.getInt("Pager_Current");
         selected_match_id = savedInstanceState.getInt("Selected_match");
         my_main = (PagerFragment) getSupportFragmentManager().getFragment(savedInstanceState,"my_main");
         super.onRestoreInstanceState(savedInstanceState);
+        Log.d(LOG_TAG, "Restored: " + current_fragment + ", " + selected_match_id);
     }
 }

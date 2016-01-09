@@ -54,7 +54,7 @@ public class myFetchService extends IntentService
 
         Uri fetch_build = Uri.parse(BASE_URL).buildUpon().
                 appendQueryParameter(QUERY_TIME_FRAME, timeFrame).build();
-        //Log.v(LOG_TAG, "The url we are looking at is: "+fetch_build.toString()); //log spam
+        Log.d(LOG_TAG, "The url we are looking at is: "+fetch_build.toString());
         HttpURLConnection m_connection = null;
         BufferedReader reader = null;
         String JSON_data = null;
@@ -70,7 +70,7 @@ public class myFetchService extends IntentService
             InputStream inputStream = m_connection.getInputStream();
             StringBuffer buffer = new StringBuffer();
             if (inputStream == null) {
-                // Nothing to do.
+                Log.d(LOG_TAG, "Nothing to process");
                 return;
             }
             reader = new BufferedReader(new InputStreamReader(inputStream));

@@ -5,10 +5,4 @@
     <string name="uefa_champions_league">UEFA Champions League</string>
     <string name="primera_division">Primera Division</string>
     <string name="unknown">Unknown League. Please report.</string>
-    <string name="match_day">Group Stages, Matchday : 6</string>
-    <string name="knockout_round">First Knockout round</string>
-    <string name="quarterfinals">QuarterFinal</string>
-    <string name="semifinals">SemiFinal</string>
-    <string name="final_match">Final</string>
-    <string name="match_day_generic">"Matchday : "</string>
 </resources>
